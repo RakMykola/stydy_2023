@@ -40,45 +40,45 @@ if (day >= 1 && day <= 10) {
 // Користувач вводить порядковий номер дня тижня
 // і на екрані відображається інфа що заплановано на цей день(можна замість плану на день, назву дня англійською).
 
-const rosklad = 'nedilja';
+// const rosklad = +prompt('enter number day');
 
 
-switch (rosklad) {
-    case 'ponedilok':
-        console.log('robota');
-        break;
-    case 'vivtorok':
-        console.log('progulka');
-        break;
-    case 'sereda':
-        console.log('sport');
-        break;
-    case '4etver':
-        console.log('robota');
-        break;
-    case 'pjatnucja':
-        console.log('dity');
-        break;
-    case 'subota':
-        console.log('vidpo4ynok');
-        break;
-    case 'nedilja':
-        console.log('cerkva');
-        break;
-    default:
-        console.log('pomylka');
-}
+// switch (rosklad) {
+//     case 1:
+//         console.log('ponedilok-robota');
+//         break;
+//     case 2:
+//         console.log('vivtorok-progulka');
+//         break;
+//     case 3:
+//         console.log('sereda-sport');
+//         break;
+//     case 4:
+//         console.log('4etver-robota');
+//         break;
+//     case 5:
+//         console.log('pjatnucja-dity');
+//         break;
+//     case 6:
+//         console.log('subota-vidpo4ynok');
+//         break;
+//     case 7:
+//         console.log('nedilja-cerkva');
+//         break;
+//     default:
+//         console.log('pomylka');
+// }
 
 // - Користувач вводить або має два числа.
 // Потрібно знайти та вивести максимальне число з тих двох .
 // Також потрібно врахувати коли введені рівні числа
 
-const numb1 = 51;
+const numb1 = 50;
 const numb2 = 51;
 
-if (numb1 > numb2 || numb2 < numb1) {
+if (numb1 > numb2) {
     console.log(numb1, 'biljshe');
-} else if (numb2 > numb1 || numb1 < numb2) {
+} else if (numb2 > numb1) {
     console.log(numb2, 'biljshe');
 } else if (numb2 === numb1) {
     console.log('rivno');
