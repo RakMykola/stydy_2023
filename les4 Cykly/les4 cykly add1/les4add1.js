@@ -139,3 +139,70 @@ for (let i = 0; i <= 100; i += 2) {
     console.log(i);
     document.write(`<div>${i}</div>`)
 }
+
+
+// стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+
+let books = [
+    {
+        name: 'Garry Potter',
+        storinky: 1000,
+        authors: ['j.Rouling'],
+        genre: ['fentesi', 'drama']
+
+    },
+    {
+        name: 'Avatar',
+        storinky: 2000,
+        authors: 'j.Goling',
+        genre: 'fentesi'
+
+    },
+    {
+        name: 'Aeroport',
+        storinky: 500,
+        authors: 'Djadjko',
+        genre: 'bojovyk'
+
+    },
+    {
+        name: 'fdfefefefefefefeggege',
+        storinky: 358,
+        authors: 'rrrrr',
+        genre: '4rrrr'
+
+    },
+    {
+        name: '10krokiv',
+        storinky: 300,
+        authors: 'errfrf',
+        genre: 'rrffvvxzc'
+
+    },
+
+
+];
+// -знайти наібльшу книжку.
+
+let max = books[0];
+for (const book of books) {
+    if (book.storinky > max.storinky) {
+        max = book;
+    }
+}
+console.log(max);
+
+
+// - знайти книжку/ки з найбільшою кількістю жанрів
+// - знайти книжку/ки з найдовшою назвою
+
+for (const book of books) {
+    if (book.name.length > max.name.length) {
+        max = book;
+    }
+}
+console.log(max);
+
+
+// - знайти книжку/ки які писали 2 автори
+// - знайти книжку/ки які писав 1 автор
